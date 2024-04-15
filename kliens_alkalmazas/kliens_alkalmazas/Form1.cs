@@ -1,6 +1,7 @@
 ﻿using Hotcakes.CommerceDTO.v1.Client;
 using Hotcakes.CommerceDTO.v1;
 using Hotcakes.CommerceDTO.v1.Orders;
+using Hotcakes.CommerceDTO.v1.Membership;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DotNetNuke.Common.Utilities;
 
 
 
@@ -33,7 +35,9 @@ namespace kliens_alkalmazas
             string key = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
 
             Api proxy = new Api(url, key);
-
+            var s = proxy.CustomerAccountsCountOfAll();
+            string kiirom = s.Content.ToString();
+            textBox1.Text = kiirom;
             
 
         }
