@@ -29,7 +29,17 @@ namespace kliens_alkalmazas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            string url = "http://20.234.113.211:8081/en-us/";
+            string key = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
+
+            Api proxy = new Api(url, key);
+
+            // specify the order to look for
+            var orderId = "4140928c-e2c8-4f2f-bb65-167fc912adcc";
+
+            // call the API to find the order
+            ApiResponse<OrderDTO> response = proxy.OrdersFind(orderId);
+
         }
     }
 }
