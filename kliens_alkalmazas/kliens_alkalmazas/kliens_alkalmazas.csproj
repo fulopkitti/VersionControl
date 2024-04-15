@@ -33,8 +33,203 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClientDependency.Core">
+      <HintPath>..\..\..\rf\References\Dnn\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CountryListBox">
+      <HintPath>..\..\..\rf\References\Dnn\CountryListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.AzureConnector">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.AzureConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="DNN.Connectors.GoogleAnalytics">
+      <HintPath>..\..\..\rf\References\Dnn\DNN.Connectors.GoogleAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.EditBar.Library">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.EditBar.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.EditBar.UI">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.EditBar.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.Modules.Console">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.Modules.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.Modules.ModuleCreator">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.Modules.ModuleCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.PersonaBar.Extensions">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.PersonaBar.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.PersonaBar.Library">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.PersonaBar.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Dnn.PersonaBar.UI">
+      <HintPath>..\..\..\rf\References\Dnn\Dnn.PersonaBar.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DNNConnect.CKEditorProvider">
+      <HintPath>..\..\..\rf\References\Dnn\DNNConnect.CKEditorProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Abstractions">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.DependencyInjection">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.HttpModules">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.HttpModules.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Instrumentation">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Log4Net">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.ModulePipeline">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.ModulePipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.CoreMessaging">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.CoreMessaging.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.DigitalAssets">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.DigitalAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.Groups">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.Groups.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.Html">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.HtmlEditorManager">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.HtmlEditorManager.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.Journal">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.Journal.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.MemberDirectory">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.MemberDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Modules.RazorHost">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Modules.RazorHost.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Services.Syndication">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Services.Syndication.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.SiteExportImport">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.SiteExportImport.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.SiteExportImport.Library">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.SiteExportImport.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.Client">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Web.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.DDRMenu">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Web.DDRMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.Deprecated">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Web.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.Mvc">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Web.Razor">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.WebControls">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Website">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Website.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.Website.Deprecated">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.Website.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke.WebUtility">
+      <HintPath>..\..\..\rf\References\Dnn\DotNetNuke.WebUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Hotcakes.Commerce">
+      <HintPath>..\..\..\rf\References\Hotcakes.Commerce.dll</HintPath>
+    </Reference>
+    <Reference Include="Hotcakes.Commerce.Dnn">
+      <HintPath>..\..\..\rf\References\Hotcakes.Commerce.Dnn.dll</HintPath>
+    </Reference>
+    <Reference Include="Hotcakes.CommerceDTO">
+      <HintPath>..\..\..\rf\References\Hotcakes.CommerceDTO.dll</HintPath>
+    </Reference>
+    <Reference Include="Hotcakes.Modules">
+      <HintPath>..\..\..\rf\References\Hotcakes.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Hotcakes.Payment">
+      <HintPath>..\..\..\rf\References\Hotcakes.Payment.dll</HintPath>
+    </Reference>
+    <Reference Include="Hotcakes.Web">
+      <HintPath>..\..\..\rf\References\Hotcakes.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\rf\References\Dnn\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>..\..\..\rf\References\Dnn\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\..\rf\References\Dnn\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Analyzers">
+      <HintPath>..\..\..\rf\References\Dnn\Lucene.Net.Contrib.Analyzers.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.FastVectorHighlighter">
+      <HintPath>..\..\..\rf\References\Dnn\Lucene.Net.Contrib.FastVectorHighlighter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\..\..\rf\References\Dnn\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\..\rf\References\Dnn\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\rf\References\Dnn\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\rf\References\Dnn\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Helpers">
+      <HintPath>..\..\..\rf\References\Dnn\Microsoft.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\..\..\rf\References\Dnn\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\rf\References\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\..\..\rf\References\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\rf\References\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\..\..\rf\References\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\..\..\rf\References\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>..\..\..\rf\References\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>..\..\..\rf\References\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
