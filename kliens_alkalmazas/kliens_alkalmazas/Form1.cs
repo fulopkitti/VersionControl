@@ -34,11 +34,7 @@ namespace kliens_alkalmazas
 
             Api proxy = new Api(url, key);
 
-            // specify the order to look for
-            var orderId = "ad66e293-9afa-4470-a233-b7c9b2bf61f0";
-
-            // call the API to find the order
-            ApiResponse<OrderDTO> response = proxy.OrdersFind(orderId);
+            
 
         }
     }
