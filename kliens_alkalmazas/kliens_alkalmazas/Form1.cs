@@ -24,10 +24,7 @@ namespace kliens_alkalmazas
             InitializeComponent();
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -35,7 +32,7 @@ namespace kliens_alkalmazas
             string key = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
 
             Api proxy = new Api(url, key);
-            var s = proxy.CategoriesFindAll().Content.Count;
+            var s = proxy.CustomerAccountsCountOfAll().Content;
             string kiirom = s.ToString();
             textBox1.Text = kiirom;
             
