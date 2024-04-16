@@ -37,7 +37,9 @@ namespace kliens_alkalmazas
             string kiirom = s.ToString();
             textBox1.Text = kiirom;
 
-            
+            ApiResponse<List<CustomerAccountDTO>> response = proxy.CustomerAccountsFindAll();
+            dataGridView1.DataBindings.Clear();
+            dataGridView1 .DataSource = response;
 
         }
     }
