@@ -37,9 +37,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 16);
+            this.label1.Size = new System.Drawing.Size(191, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Regisztrált felhasználók";
+            this.label1.Text = "Regisztrált felhasználók száma";
             // 
             // textBox1
             // 
