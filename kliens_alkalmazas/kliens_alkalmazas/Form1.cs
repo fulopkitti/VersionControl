@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DotNetNuke.Common.Utilities;
+using DotNetNuke.UI.UserControls;
 
 
 
@@ -35,6 +36,7 @@ namespace kliens_alkalmazas
             var s = proxy.CustomerAccountsCountOfAll().Content;
             string kiirom = s.ToString();
             textBox1.Text = kiirom;
+
             
 
         }
