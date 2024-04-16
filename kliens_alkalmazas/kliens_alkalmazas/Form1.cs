@@ -31,12 +31,12 @@ namespace kliens_alkalmazas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string url = "http://20.234.113.211:8081/en-us/";
+            string url = "http://20.234.113.211:8081";
             string key = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
 
             Api proxy = new Api(url, key);
-            var s = proxy.CustomerAccountsCountOfAll();
-            string kiirom = s.Content.ToString();
+            var s = proxy.CategoriesFindAll().Content.Count;
+            string kiirom = s.ToString();
             textBox1.Text = kiirom;
             
 
