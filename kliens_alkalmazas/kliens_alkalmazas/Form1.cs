@@ -39,7 +39,7 @@ namespace kliens_alkalmazas
 
             ApiResponse<List<CustomerAccountDTO>> response = proxy.CustomerAccountsFindAll();
             dataGridView1.DataBindings.Clear();
-            dataGridView1 .DataSource = response;
+            dataGridView1.DataSource = response;
 
         }
     }
