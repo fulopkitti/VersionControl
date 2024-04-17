@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DotNetNuke.Common.Utilities;
 using DotNetNuke.UI.UserControls;
+using Newtonsoft.Json.Linq;
+using Hotcakes.Web;
+using Newtonsoft.Json;
 
 
 
@@ -37,10 +40,24 @@ namespace kliens_alkalmazas
             string kiirom = s.ToString();
             textBox1.Text = kiirom;
 
-            ApiResponse<List<CustomerAccountDTO>> response = proxy.CustomerAccountsFindAll();
-            dataGridView1.DataBindings.Clear();
-            dataGridView1.DataSource = response;
 
+
+            var response = proxy.CustomerAccountsFindAll();
+
+            JObject jResponse = JObject.Parse(response.ObjectToJson());
+            JArray jArray = (JArray)jResponse["Content"];
+
+            string[] keysToRemove = { "Password", "Addressess", "TaxExempt", "Notes", "PricingGroupId", "FailedLoginCount", "LastUpdatedUtc", "BillingAddress"};
+            foreach (JObject felhasznalo in jArray)
+            {
+                foreach (var keys in keysToRemove.ToList())
+                {
+                    felhasznalo.Remove(key);
+                }
+            }
+
+            DataTable userTabla = (DataTable)JsonConvert.DeserializeObject(jArray.ToString(), typeof(DataTable));
+            dataGridView1.DataSource = userTabla;
         }
     }
 }
