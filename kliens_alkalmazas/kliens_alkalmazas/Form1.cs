@@ -33,7 +33,7 @@ namespace kliens_alkalmazas
             button2.ForeColor = Color.White;
             textBox1.BackColor = Color.FromArgb(195, 217, 185);
             dateTimePicker1.Value = new DateTime(DateTime.Now.Year, 3, 5);
-
+            
         }
         private static Api apiHivas()
         {

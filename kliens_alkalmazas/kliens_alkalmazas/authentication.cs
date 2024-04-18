@@ -115,11 +115,6 @@ namespace kliens_alkalmazas
             return true;
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            textBox2.Text += "*";
-            textBox2.SelectionStart = textBox2.Text.Length; 
-            e.Handled = true;
-        }
+        
     }
 }

@@ -55,7 +55,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(830, 493);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(222, 22);
             this.textBox1.TabIndex = 1;
@@ -63,11 +63,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 45);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1055, 356);
+            this.dataGridView1.Size = new System.Drawing.Size(1078, 356);
             this.dataGridView1.TabIndex = 2;
             // 
             // label2
@@ -84,7 +84,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.Location = new System.Drawing.Point(26, 425);
-            this.button1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(183, 43);
             this.button1.TabIndex = 6;
@@ -96,7 +96,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.Location = new System.Drawing.Point(26, 474);
-            this.button2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 41);
             this.button2.TabIndex = 7;
