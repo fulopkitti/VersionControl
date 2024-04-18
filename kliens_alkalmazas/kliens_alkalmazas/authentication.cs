@@ -51,7 +51,6 @@ namespace kliens_alkalmazas
         private void textBox2_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(textBox2, "");
-            textBox2.BackColor = Color.LightGreen;
         }
 
         private void textBox3_Validated(object sender, EventArgs e)
@@ -115,6 +114,10 @@ namespace kliens_alkalmazas
             return true;
         }
 
-        
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            textBox2.Text = String.Empty;
+            textBox2.PasswordChar = '*';
+        }
     }
 }
