@@ -68,7 +68,15 @@ namespace kliens_alkalmazas
         private void button2_Click(object sender, EventArgs e)
         {
             authentication azon = new authentication();
-            azon.Show();
+            if (azon.ShowDialog() != DialogResult.OK) return;
+
+            string url = "http://20.234.113.211:8081";
+            string kulcs = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
+
+            Api proxy = new Api(url, kulcs);
+            var customerID = azon.textBox3.Text;
+            ApiResponse<bool> response = proxy.CustomerAccountsDelete(customerID);
+
         }
     }
 }

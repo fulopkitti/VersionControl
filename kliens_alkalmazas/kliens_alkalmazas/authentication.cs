@@ -77,7 +77,7 @@ namespace kliens_alkalmazas
 
         private bool CheckUser(string user)
         {
-            return string.Equals(user, "host", StringComparison.InvariantCultureIgnoreCase);
+            return string.Equals(user, "admin", StringComparison.InvariantCultureIgnoreCase);
         }
 
         private bool CheckPassword(string jelszo) 
