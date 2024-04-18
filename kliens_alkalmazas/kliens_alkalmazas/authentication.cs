@@ -56,6 +56,7 @@ namespace kliens_alkalmazas
         private void textBox3_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(textBox3, "");
+            textBox3.BackColor = Color.LightGreen;
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
@@ -83,7 +84,8 @@ namespace kliens_alkalmazas
             if (!CheckId(textBox3.Text))
             {
                 e.Cancel = true;
-                errorProvider1.SetError(textBox3, "Az Id nem lehet üres");
+                errorProvider1.SetError(textBox3, "Az Id nem lehet üres és/vagy számnak kell lennie");
+                textBox3.BackColor = Color.LightSalmon;
             }
         }
 
@@ -99,7 +101,17 @@ namespace kliens_alkalmazas
 
         private bool CheckId(string id)
         {
-            return !string.IsNullOrEmpty(id);
+            if (string.IsNullOrEmpty(id))
+            {
+                return false;
+            }
+
+            if (!int.TryParse(id, out _))
+            {
+                return false;
+            }
+
+            return true;
         }
 
         
