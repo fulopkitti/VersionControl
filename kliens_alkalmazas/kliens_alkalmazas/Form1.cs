@@ -32,6 +32,11 @@ namespace kliens_alkalmazas
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             string url = "http://20.234.113.211:8081";
             string kulcs = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
 
@@ -47,7 +52,7 @@ namespace kliens_alkalmazas
             JObject jResponse = JObject.Parse(response.ObjectToJson());
             JArray jArray = (JArray)jResponse["Content"];
 
-            string[] keysToRemove = {"Password","Addresses", "Notes","TaxExempt", "PricingGroupId","FailedLoginCount", "LastUpdatedUtc", "ShippingAddress", "BillingAddress"};
+            string[] keysToRemove = { "Password", "Addresses", "Notes", "TaxExempt", "PricingGroupId", "FailedLoginCount", "LastUpdatedUtc", "ShippingAddress", "BillingAddress" };
             foreach (JObject felhasznalo in jArray)
             {
                 foreach (var key in keysToRemove.ToList())
