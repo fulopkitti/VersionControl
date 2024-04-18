@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace kliens_alkalmazas
 {
@@ -114,6 +115,11 @@ namespace kliens_alkalmazas
             return true;
         }
 
-        
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            textBox2.Text += "*";
+            textBox2.SelectionStart = textBox2.Text.Length; 
+            e.Handled = true;
+        }
     }
 }
