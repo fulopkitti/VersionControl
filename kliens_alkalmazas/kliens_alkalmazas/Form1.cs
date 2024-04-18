@@ -26,6 +26,14 @@ namespace kliens_alkalmazas
         public Form1()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(237, 238, 233);
+            button1.BackColor = Color.FromArgb(115, 131, 145);
+            button1.ForeColor = Color.White;
+            button2.BackColor = Color.FromArgb(115, 131, 145);
+            button2.ForeColor = Color.White;
+            textBox1.BackColor = Color.FromArgb(195, 217, 185);
+            dateTimePicker1.Value = new DateTime(DateTime.Now.Year, 3, 5);
+
         }
         private static Api apiHivas()
         {
@@ -67,6 +75,7 @@ namespace kliens_alkalmazas
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             Api proxy = apiHivas();
             var s = proxy.CustomerAccountsCountOfAll().Content;
             string kiirom = s.ToString();
@@ -105,6 +114,7 @@ namespace kliens_alkalmazas
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             authentication azon = new authentication();
             if (azon.ShowDialog() != DialogResult.OK) return;
 

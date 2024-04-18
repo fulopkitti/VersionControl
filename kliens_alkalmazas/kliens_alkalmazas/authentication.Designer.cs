@@ -44,24 +44,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(12, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 16);
+            this.label1.Size = new System.Drawing.Size(111, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Felhasználónév";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(12, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 16);
+            this.label2.Size = new System.Drawing.Size(52, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Jelszó";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 42);
+            this.textBox1.Location = new System.Drawing.Point(161, 45);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(161, 22);
             this.textBox1.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(141, 81);
+            this.textBox2.Location = new System.Drawing.Point(161, 81);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(161, 22);
             this.textBox2.TabIndex = 3;
@@ -102,15 +104,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(12, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 16);
+            this.label3.Size = new System.Drawing.Size(137, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Törlendő azonosító";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 118);
+            this.textBox3.Location = new System.Drawing.Point(161, 121);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(161, 22);
             this.textBox3.TabIndex = 7;
