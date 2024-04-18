@@ -97,6 +97,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Mégse";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -151,7 +152,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        public System.Windows.Forms.TextBox textBox3;
     }
 }

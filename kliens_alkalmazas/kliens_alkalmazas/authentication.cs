@@ -19,6 +19,11 @@ namespace kliens_alkalmazas
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (this.ValidateChildren())
@@ -26,7 +31,7 @@ namespace kliens_alkalmazas
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
-        }
+        } 
 
         private void textBox1_Validated(object sender, EventArgs e)
         {
@@ -72,17 +77,19 @@ namespace kliens_alkalmazas
 
         private bool CheckUser(string user)
         {
-            return string.Equals(user, "admin", StringComparison.OrdinalIgnoreCase);
+            return string.Equals(user, "host", StringComparison.InvariantCultureIgnoreCase);
         }
 
         private bool CheckPassword(string jelszo) 
         {
-            return string.Equals(jelszo, "asd123", StringComparison.OrdinalIgnoreCase);
+            return string.Equals(jelszo, "asd123", StringComparison.InvariantCultureIgnoreCase);
         }
 
         private bool CheckId(string id)
         {
             return !string.IsNullOrEmpty(id);
         }
+
+        
     }
 }
