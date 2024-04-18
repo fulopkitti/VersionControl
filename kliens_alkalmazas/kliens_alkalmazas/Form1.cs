@@ -64,5 +64,11 @@ namespace kliens_alkalmazas
             DataTable userTabla = (DataTable)JsonConvert.DeserializeObject(jArray.ToString(), typeof(DataTable));
             dataGridView1.DataSource = userTabla;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            authentication azon = new authentication();
+            azon.Show();
+        }
     }
 }
