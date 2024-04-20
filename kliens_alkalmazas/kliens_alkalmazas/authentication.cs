@@ -75,7 +75,6 @@ namespace kliens_alkalmazas
             {
                 e.Cancel = true;
                 errorProvider1.SetError(textBox2, "A jelszó hibás");
-                textBox2.BackColor = Color.LightSalmon;
             }
         }
 
@@ -85,6 +84,7 @@ namespace kliens_alkalmazas
             {
                 e.Cancel = true;
                 errorProvider1.SetError(textBox3, "Az Id nem lehet üres és/vagy számnak kell lennie");
+                textBox3.BackColor = Color.LightSalmon;
             }
         }
 
