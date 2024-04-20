@@ -48,8 +48,8 @@ namespace kliens_alkalmazas
         {
             Api proxy = apiHivas();
             var s = proxy.CustomerAccountsCountOfAll().Content;
-            string kiirom = s.ToString();
-            textBox1.Text = kiirom;
+            string regisztraltDarab = s.ToString();
+            textBox1.Text = regisztraltDarab;
 
 
 
