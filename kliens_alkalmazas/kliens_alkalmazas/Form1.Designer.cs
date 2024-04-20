@@ -46,7 +46,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(827, 474);
+            this.label1.Location = new System.Drawing.Point(827, 463);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 16);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.textBox1.Location = new System.Drawing.Point(830, 493);
             this.textBox1.Margin = new System.Windows.Forms.Padding(0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 22);
+            this.textBox1.Size = new System.Drawing.Size(63, 22);
             this.textBox1.TabIndex = 1;
             // 
             // dataGridView1
