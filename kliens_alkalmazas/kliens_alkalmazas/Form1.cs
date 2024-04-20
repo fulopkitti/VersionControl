@@ -58,7 +58,7 @@ namespace kliens_alkalmazas
             JObject jResponse = JObject.Parse(response.ObjectToJson());
             JArray jArray = (JArray)jResponse["Content"];
 
-            string[] keysToRemove = { "Password", "Addresses", "Notes", "TaxExempt", "PricingGroupId", "FailedLoginCount", "LastUpdatedUtc", "ShippingAddress", "BillingAddress" };
+            string[] keysToRemove = {"Password", "Addresses", "Notes", "TaxExempt", "PricingGroupId", "FailedLoginCount", "LastUpdatedUtc", "ShippingAddress", "BillingAddress"};
             foreach (JObject felhasznalo in jArray)
             {
                 foreach (var key in keysToRemove.ToList())
