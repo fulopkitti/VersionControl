@@ -1,0 +1,6 @@
+[submodule "shirtdesigner"]
+	path = shirtdesigner
+	url = https://github.com/BigM19/shirtdesigner.git
+[submodule "kliensalkalmazas"]
+	path = kliensalkalmazas
+	url = https://github.com/BigM19/kliensalkalmazas.git
