@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kliens_alkalmazas", "kliens
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject_API", "UnitTestProject_API\UnitTestProject_API.csproj", "{72E0B1DB-D903-427A-8C9E-17ADAE993386}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject_authentication", "UnitTestProject_authentication\UnitTestProject_authentication.csproj", "{48C42C0F-76A2-495E-97E8-9AD876F08834}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{72E0B1DB-D903-427A-8C9E-17ADAE993386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E0B1DB-D903-427A-8C9E-17ADAE993386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E0B1DB-D903-427A-8C9E-17ADAE993386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C42C0F-76A2-495E-97E8-9AD876F08834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C42C0F-76A2-495E-97E8-9AD876F08834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C42C0F-76A2-495E-97E8-9AD876F08834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C42C0F-76A2-495E-97E8-9AD876F08834}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
