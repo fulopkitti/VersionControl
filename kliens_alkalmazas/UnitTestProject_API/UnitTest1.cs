@@ -15,8 +15,8 @@ namespace UnitTestProject1
             {
 
                 // Arrange
-                string expectedUrl = "http://20.234.113.211:8081";
-                string expectedKulcs = Form1.apiHivas;
+                string expectedUrl = kliens_alkalmazas.Form1.YourClass.Url;
+                string expectedKulcs = kliens_alkalmazas.Form1.YourClass.Kulcs;
 
 
 
@@ -34,5 +34,7 @@ namespace UnitTestProject1
                 Assert.Fail($"Hiba történt az external API hívás közben: {ex.Message}");
             }
         }
+
+        
     }
 }
