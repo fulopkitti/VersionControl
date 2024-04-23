@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using kliens_alkalmazas;
 
 namespace UnitTestProject_API
 {
