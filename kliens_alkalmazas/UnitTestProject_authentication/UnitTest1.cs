@@ -16,7 +16,7 @@ namespace UnitTestProject_authentication
         TestCase("admin", "asd123", true), // megfelelő felhasználónév és jelszó
         TestCase("user", "asd123", false), // nem admin felhasználónév
         TestCase("admin", "password", false), // nem megfelelő jelszó
-        TestCase("user", "password", false)] */
+        TestCase("user", "password", false)]*/
         public void TestCheckUser()
         {
             // Arrange
