@@ -1,12 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Net.NetworkInformation;
 using System;
 using kliens_alkalmazas;
 
 
-namespace UnitTestProject_API
+namespace UnitTestProject1
 {
-
     [TestClass]
     public class UnitTest1
     {
@@ -15,36 +13,26 @@ namespace UnitTestProject_API
         {
             try
             {
-                // Arrange
-                string ipAddress = "20.234.113.211";
 
-                // Act
-                bool isReachable = IsReachable(ipAddress);
+                // Arrange
+                string expectedUrl = "http://20.234.113.211:8081";
+                string expectedKulcs = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
+
+
 
                 // Assert
-                Assert.IsTrue(isReachable, $"The IP address {ipAddress} is not reachable.");
+                Assert.IsNotNull("http://21.234.113.211:8081", "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844");
+                Assert.AreEqual(expectedUrl, "http://20.234.113.211:8081");
+                Assert.AreEqual(expectedKulcs, "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844");
+
+                //Assert.IsNotNull(response);
+                //Assert.IsTrue(response.Success);
             }
+
             catch (Exception ex)
             {
-                Assert.Fail($"Hiba történt az IP cím elérhetőségének ellenőrzése közben: {ex.Message}");
-            }
-        }
-
-        public bool IsReachable(string ipAddress)
-        {
-            using (Ping ping = new Ping())
-            {
-                try
-                {
-                    PingReply reply = ping.Send(ipAddress);
-                    return reply.Status == IPStatus.Success;
-                }
-                catch
-                {
-                    return false;
-                }
+                Assert.Fail($"Hiba történt az external API hívás közben: {ex.Message}");
             }
         }
     }
-
 }
