@@ -15,8 +15,8 @@ namespace UnitTestProject1
             {
 
                 // Arrange
-                string expectedUrl = kliens_alkalmazas.Form1.YourClass.Url;
-                string expectedKulcs = kliens_alkalmazas.Form1.YourClass.Kulcs;
+                string expectedUrl = kliens_alkalmazas.Form1.kliens_kulcs.Url;
+                string expectedKulcs = kliens_alkalmazas.Form1.kliens_kulcs.Kulcs;
 
 
 

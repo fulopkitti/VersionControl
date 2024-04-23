@@ -35,18 +35,10 @@ namespace kliens_alkalmazas
             dateTimePicker1.Value = new DateTime(DateTime.Now.Year, 3, 5);
 
         }
-        public static Api apiHivas()
-        {
-            string url = "http://20.234.113.211:8081";
-            string kulcs = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
-
-            Api proxy = new Api(url, kulcs);
-            return proxy;
-        }
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            Api proxy = apiHivas();
+            Api proxy = kliens_kulcs.ApiHivas();
             var s = proxy.CustomerAccountsCountOfAll().Content;
             string regisztraltDarab = s.ToString();
             textBox1.Text = regisztraltDarab;
@@ -76,7 +68,7 @@ namespace kliens_alkalmazas
         public void button1_Click(object sender, EventArgs e)
         {
 
-            Api proxy = apiHivas();
+            Api proxy = kliens_kulcs.ApiHivas();
             var s = proxy.CustomerAccountsCountOfAll().Content;
             string kiirom = s.ToString();
             textBox1.Text = kiirom;
@@ -118,13 +110,13 @@ namespace kliens_alkalmazas
             authentication azon = new authentication();
             if (azon.ShowDialog() != DialogResult.OK) return;
 
-            Api proxy = apiHivas();
+            Api proxy = kliens_kulcs.ApiHivas();
             var customerID = azon.textBox3.Text;
             ApiResponse<bool> response = proxy.CustomerAccountsDelete(customerID);
 
         }
 
-        public class YourClass
+        public class kliens_kulcs
         {
             // Define public static properties for the URL and key
             public static string Url { get; } = "http://20.234.113.211:8081";
