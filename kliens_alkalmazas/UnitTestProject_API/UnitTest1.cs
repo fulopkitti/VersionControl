@@ -16,12 +16,12 @@ namespace UnitTestProject1
 
                 // Arrange
                 string expectedUrl = "http://20.234.113.211:8081";
-                string expectedKulcs = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
+                string expectedKulcs = Form1.apiHivas;
 
 
 
                 // Assert
-                Assert.IsNotNull("http://21.234.113.211:8081", "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844");
+                Assert.IsNotNull(expectedUrl, expectedKulcs);
                 Assert.AreEqual(expectedUrl, "http://20.234.113.211:8081");
                 Assert.AreEqual(expectedKulcs, "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844");
 

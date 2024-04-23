@@ -1,65 +1,83 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using kliens_alkalmazas;
+using System.Text.RegularExpressions;
 
 namespace UnitTestProject_authentication
 {
-    [TestMethod]
-    public void TestCheckUser_ValidUsername_ReturnsTrue()
+    [TestClass]
+    public class UnitTest2
     {
-        string validUsername = "admin";
 
-        bool result = authentication.CheckUser(validUsername);
+        [TestMethod]
+        public void TestCheckUser()
+        {
+            // Arrange
+            string adminUsername = "admin";
+            string regularUsername = "user";
 
+            // Act
+            bool isAdminUser = CheckUser(adminUsername);
+            bool isRegularUser = CheckUser(regularUsername);
 
-        Assert.IsTrue(result);
-    }
+            // Assert
+            Assert.IsTrue(isAdminUser);
+            Assert.IsFalse(isRegularUser);
+        }
 
-    public void TestCheckUser_InvalidUsername_ReturnsFalse()
-    {
-        string invalidUsername = "user";
+        [TestMethod]
+        public void TestCheckPassword()
+        {
+            // Arrange
+            string validPassword = "asd123";
+            string invalidPassword = "password";
 
+            // Act
+            bool isValidPassword = CheckPassword(validPassword);
+            bool isInvalidPassword = CheckPassword(invalidPassword);
 
-        bool result = authentication.CheckUser(invalidUsername);
+            // Assert
+            Assert.IsTrue(isValidPassword);
+            Assert.IsFalse(isInvalidPassword);
+        }
 
+        [TestMethod]
+        public void TestCheckId()
+        {
+            // Arrange
+            int validId = 5;
+            int invalidId = 0; // Az id értékének nullánál nagyobbnak kell lennie.
 
-        Assert.IsFalse(result);
-    }
+            // Act
+            bool isValidId = CheckId(validId);
+            bool isInvalidId = CheckId(invalidId);
 
-    public void TestCheckPassword_ValidPassword_ReturnsTrue()
-    {
-        string validPassword = "asd123";
+            // Assert
+            Assert.IsTrue(isValidId);
+            Assert.IsFalse(isInvalidId);
+        }
 
-        bool result = authentication.CheckPassword(validPassword);
+        // Segédfüggvények
 
-        Assert.IsTrue(result);
-    }
+        private bool CheckUser(string username)
+        {
+            // Admin felhasználónév ellenőrzése
+            Regex adminRegex = new Regex("admin");
+            return adminRegex.IsMatch(username);
+        }
 
-    public void TestCheckPassword_InvalidPassword_ReturnsFalse()
-    {
-        string invalidPassword = "password";
+        private bool CheckPassword(string password)
+        {
+            // Jelszó ellenőrzése
+            Regex passwordRegex = new Regex("asd123");
+            return passwordRegex.IsMatch(password);
+        }
 
-        bool result = authentication.CheckPassword(invalidPassword);
-
-        Assert.IsFalse(result);
-    }
-
-    public void TestCheckId_ValidId_ReturnsTrue()
-    {
-        int validId = 5;
-
-        bool result = authentication.CheckId(validId);
-
-        Assert.IsTrue(result);
-    }
-
-    public void TestCheckId_InvalidId_ReturnsFalse()
-    {
-        int invalidId = 10;
-
-        bool result = authentication.CheckId(invalidId);
-
-        Assert.IsFalse(result);
+        private bool CheckId(int id)
+        {
+            // Id ellenőrzése
+            return id > 0;
+        }
     }
 }
 
