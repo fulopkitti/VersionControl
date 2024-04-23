@@ -35,7 +35,7 @@ namespace kliens_alkalmazas
             dateTimePicker1.Value = new DateTime(DateTime.Now.Year, 3, 5);
             
         }
-        private static Api apiHivas()
+        public static Api apiHivas()
         {
             string url = "http://20.234.113.211:8081";
             string kulcs = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
@@ -44,7 +44,7 @@ namespace kliens_alkalmazas
             return proxy;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
             Api proxy = apiHivas();
             var s = proxy.CustomerAccountsCountOfAll().Content;
@@ -73,7 +73,7 @@ namespace kliens_alkalmazas
 
         
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
 
             Api proxy = apiHivas();
@@ -112,7 +112,7 @@ namespace kliens_alkalmazas
 
         
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
 
             authentication azon = new authentication();

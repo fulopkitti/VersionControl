@@ -28,12 +28,12 @@ namespace kliens_alkalmazas
             textBox3.BackColor = Color.FromArgb(195, 217, 185);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             if (this.ValidateChildren())
             {
@@ -42,24 +42,24 @@ namespace kliens_alkalmazas
             }
         } 
 
-        private void textBox1_Validated(object sender, EventArgs e)
+        public void textBox1_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(textBox1, "");
             textBox1.BackColor = Color.LightGreen;
         }
 
-        private void textBox2_Validated(object sender, EventArgs e)
+        public void textBox2_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(textBox2, "");
         }
 
-        private void textBox3_Validated(object sender, EventArgs e)
+        public void textBox3_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(textBox3, "");
             textBox3.BackColor = Color.LightGreen;
         }
 
-        private void textBox1_Validating(object sender, CancelEventArgs e)
+        public void textBox1_Validating(object sender, CancelEventArgs e)
         {
             if (!CheckUser(textBox1.Text))
             {
