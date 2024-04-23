@@ -128,7 +128,7 @@ namespace kliens_alkalmazas
         {
             // Define public static properties for the URL and key
             public static string Url { get; } = "http://20.234.113.211:8081";
-            public static string Kulcs { get; } = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9844";
+            public static string Kulcs { get; } = "1-96b39a7e-b4d5-4e33-ab50-b2176bfb9845";
             // Define a method to create and return the API proxy
             public static Api ApiHivas()
             {
