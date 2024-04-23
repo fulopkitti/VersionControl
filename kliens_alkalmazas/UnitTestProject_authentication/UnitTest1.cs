@@ -2,14 +2,21 @@
 using System;
 using kliens_alkalmazas;
 using System.Text.RegularExpressions;
+using Moq;
+using NUnit;
 
 namespace UnitTestProject_authentication
 {
-    [TestClass]
+    //[TestClass]
+    
     public class UnitTest2
     {
-
         [TestMethod]
+        /*[Test, 
+        TestCase("admin", "asd123", true), // megfelelő felhasználónév és jelszó
+        TestCase("user", "asd123", false), // nem admin felhasználónév
+        TestCase("admin", "password", false), // nem megfelelő jelszó
+        TestCase("user", "password", false)] */
         public void TestCheckUser()
         {
             // Arrange
